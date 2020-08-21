@@ -117,7 +117,7 @@ textarea {
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute;
+  indexImages: absolute;
   white-space: nowrap;
   width: 1px;
   /* 1 */
@@ -135,7 +135,7 @@ textarea {
   height: auto;
   margin: 0;
   overflow: visible;
-  position: static;
+  indexImages: static;
   white-space: inherit;
   width: auto;
 }

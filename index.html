@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Accueil</title>
+  <meta name="description" content="website of norImmo, build, buy and repair your house">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -59,15 +59,18 @@
 
   <main>
 
-<!-- Carousel dans le main 3 images qui défilent, -->
-<!-- Si on clique sur une flèche (bouton) l'evenement onclick appelle la fonction changeImage  -->
-<!-- la fonction changeImage() prend le parametre -1 a précédent et 1 a suivant -->
+<!-- Carousel in the hand 3 scrolling images with their description -->
+<!-- If we click on an arrow (button), the onclick event calls the changeImage function  -->
+<!-- the changeImage () function takes the parameter -1 on previous and 1 on next-->
     <section id="blocCarousel">
+
+      <p id="description">Vous voulez une piscine ?</p>
       <img id="carousel" src="img/maison1.jpg" alt="maison1">
+      
       <div id="precedent" onclick="changeImage(-1)"> < </div>
       <div id="suivant" onclick="changeImage(1)"> > </div>
+      
     </section>
-
 
   </main>
   
@@ -77,11 +80,6 @@
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur, ea blanditiis nisi debitis aspernatur nemo delectus ullam quibusdam quam doloribus doloremque temporibus nesciunt quasi sapiente! Asperiores qui dicta dolore!</p>
       </div>
     </footer>
-
-
-
-
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

@@ -57,22 +57,23 @@
     </header>
 
     
-  <main>
+  <main class="container">
   
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <label class="input-group-text" for="inputGroupSelect01">Maison en : </label>
       </div>
-      <select class="custom-select" id="inputGroupSelect01">
+      <select class="custom-select" id="inputMateriau">
         <option selected>Choisissez votre matériau</option>
         <option value="1">parpaing</option>
         <option value="2">bois</option>
         <option value="3">Brique</option>
       </select>
     </div>
+
     <div class="form-group">
       <label for="exampleFormControlSelect1">nombre de chambres</label>
-      <select class="form-control" id="exampleFormControlSelect1">
+      <select class="form-control" id="inputNbrChambres">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -80,7 +81,20 @@
         <option>5</option>
       </select>
     </div>
-    
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Surface</span>
+      </div>
+      <input type="number" class="form-control" ID="inputSurface">
+      <div class="input-group-append">
+        <span class="input-group-text">Métres carrés</span>
+      </div>
+    </div>
+      <button type="submit" class="btn btn-primary mb-2"onclick="submit()" >Estimer</button>
+
+<p>Votre maison coûtera :<span ID="resultat"></span></p>
+
+
   </main>
   
     <footer class="jumbotron jumbotron-fluid">
@@ -98,6 +112,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/estimation.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

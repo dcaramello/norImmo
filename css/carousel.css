@@ -1,0 +1,41 @@
+/* taille du carousel  */
+
+main {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  #blocCarousel {
+    width: 1000px;
+    height: 700px;
+    margin-bottom: 30px;
+    position: relative;
+    
+  } 
+  
+  /* tailles des images dans le carousel */
+  #blocCarousel > img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  /* Bouttons précédent et suivant */
+  #precedent, #suivant {
+    position: absolute;
+    bottom: 45%;
+    font-size: 50px;
+    color: white;
+    background-color: lightgrey;
+    padding: 3px;
+  }
+  
+  #precedent {
+    left: 0;
+  }
+  
+  #suivant {
+    right: 0;
+  }
+  

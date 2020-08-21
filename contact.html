@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Contact</title>
+  <meta name="description" content="contact norImmo">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -26,26 +26,26 @@
 <body>
     <!-- Add your site or application content here -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Acceuil</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="estimation.html">Estimation <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="questions.html">Questions fréquentes</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Acceuil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="estimation.html">Estimation <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="questions.html">Questions fréquentes</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
   
     <header class="jumbotron">
       <h1 class="display-4">NorImmo</h1>
@@ -59,16 +59,74 @@
     
   <main>
   
-  contact
-    
-  </main>
-  
-    <footer class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Mentions légales</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur, ea blanditiis nisi debitis aspernatur nemo delectus ullam quibusdam quam doloribus doloremque temporibus nesciunt quasi sapiente! Asperiores qui dicta dolore!</p>
+
+
+    <!-- input name -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Nom</span>
       </div>
-    </footer>
+      <input type="text" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="basic-addon1">
+    </div>
+
+    <!-- input lastname -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Prénom</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" aria-describedby="basic-addon1">
+    </div>
+
+    <!-- input phone number -->
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Téléphone" aria-label="Téléphone" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">Téléphone</span>
+      </div>
+    </div>
+    
+
+    <!-- radio for choices -->
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        Devis
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Information
+      </label>
+    </div>
+    <div class="form-check disabled">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+      <label class="form-check-label" for="exampleRadios3">
+        Réclamation
+      </label>
+    </div>
+
+
+    <!-- input your message -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Message</span>
+      </div>
+      <textarea class="form-control" placeholder="Votre message ..." aria-label="Message"></textarea>
+    </div>
+
+
+    <!-- button submit -->
+    <button type="button" class="btn btn-primary">Envoyer</button>
+
+  </main>
+
+  <footer class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Mentions légales</h1>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur, ea blanditiis nisi debitis aspernatur nemo delectus ullam quibusdam quam doloribus doloremque temporibus nesciunt quasi sapiente! Asperiores qui dicta dolore!</p>
+    </div>
+  </footer>
 
 
 
@@ -78,6 +136,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

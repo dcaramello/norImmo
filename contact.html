@@ -58,66 +58,33 @@
 
     
   <main>
-  
+  <!-- contact form -->
+  <form id="contact">
 
+    <label for="nom">Entrez votre nom : </label>
+    <input id="nom" type="text" name="nom" placeholder="Nom" minlength="2" maxlength="50"><br>
+    <span id="missNom"></span>
 
-    <!-- input name -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Nom</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="basic-addon1">
-    </div>
-
-    <!-- input lastname -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Prénom</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" aria-describedby="basic-addon1">
-    </div>
-
-    <!-- input phone number -->
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Téléphone" aria-label="Téléphone" aria-describedby="basic-addon2">
-      <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2">Téléphone</span>
-      </div>
-    </div>
+    <label for="prenom">Entrez votre prénom : </label>
+    <input id="prenom" type="text" name="prenom" placeholder="Prénom" minlength="2" maxlength="50"><br>
     
+    <label for="tel">Entrez votre numéro de téléphone : </label>
+    <input id="telephone" type="tel" name="tel" placeholder="Téléphone"><br>
+  
+    <input type="checkbox" name="devis" value="devis">Devis<br>
+    <input type="checkbox" name="information" value="information">Information<br>
+    <input type="checkbox" name="reclamation" value="reclamation">Réclamation<br>
+    
+    <label for="message">Entrez votre message : </label><br>
+    <textarea id="message" type="text" name="Message" placeholder="Votre message ..." cols="30" rows="10" maxlength="400"></textarea><br>
 
-    <!-- radio for choices -->
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-      <label class="form-check-label" for="exampleRadios1">
-        Devis
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-      <label class="form-check-label" for="exampleRadios2">
-        Information
-      </label>
-    </div>
-    <div class="form-check disabled">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-      <label class="form-check-label" for="exampleRadios3">
-        Réclamation
-      </label>
-    </div>
+    <!--  submit -->
+    <input id="boutton_envoyer" type="submit" value="envoyer"></input>
 
+  </form>
 
-    <!-- input your message -->
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <span class="input-group-text">Message</span>
-      </div>
-      <textarea class="form-control" placeholder="Votre message ..." aria-label="Message"></textarea>
-    </div>
-
-
-    <!-- button submit -->
-    <button type="button" class="btn btn-primary">Envoyer</button>
+  <!-- error message -->
+  <p id="error" style="color :red"></p>
 
   </main>
 

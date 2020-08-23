@@ -1,10 +1,3 @@
-// -----------------        norImmo     --------------------
-// =========================================================
-
-//             Home page with the image carousel
-// *********************************************************
-
-
 // An array that contains the images of the carousel
 // the indexImages variable corresponds to the position in the array
 let images = new Array("img/maison1.jpg", "img/maison2.jpg", "img/maison3.jpg");
@@ -43,8 +36,6 @@ function changeImage(flecheDirection) {
     document.getElementById("description").innerHTML = descriptions[indexDescriptions];
     console.log(indexDescriptions);
 }
-
-// -------------------------------------
 
 // Function changeImageAuto qui incrémente les positions des array images et descriptions
 // If we arrive at the last element of the array we start again at 0

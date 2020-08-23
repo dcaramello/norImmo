@@ -63,13 +63,15 @@
 
     <label for="nom">Entrez votre nom : </label>
     <input id="nom" type="text" name="nom" placeholder="Nom" minlength="2" maxlength="50"><br>
-    <span id="missNom"></span>
+    
 
     <label for="prenom">Entrez votre prénom : </label>
     <input id="prenom" type="text" name="prenom" placeholder="Prénom" minlength="2" maxlength="50"><br>
     
+
     <label for="tel">Entrez votre numéro de téléphone : </label>
     <input id="telephone" type="tel" name="tel" placeholder="Téléphone"><br>
+    
   
     <input type="checkbox" name="devis" value="devis">Devis<br>
     <input type="checkbox" name="information" value="information">Information<br>
@@ -77,14 +79,13 @@
     
     <label for="message">Entrez votre message : </label><br>
     <textarea id="message" type="text" name="Message" placeholder="Votre message ..." cols="30" rows="10" maxlength="400"></textarea><br>
-
+    
     <!--  submit -->
     <input id="boutton_envoyer" type="submit" value="envoyer"></input>
 
-  </form>
+    <span id="erreur" style="color :red"></span><br>
 
-  <!-- error message -->
-  <p id="error" style="color :red"></p>
+  </form>
 
   </main>
 

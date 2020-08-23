@@ -1,51 +1,53 @@
-// dans le formulaire contact quand on clique sur envoyer
+// *********************
+// when validating the form, the following conditions are verified
+// if an input is not valid, do not reload the page with preventdefault ()
 document.getElementById("contact").addEventListener("submit", function(event) {
-
-    let error;
-    
-    
+	
+    // variables **
+    let regTel = /^0[6-7]{1}[0-9]{8}/;
+    let nom = document.getElementById("nom");
+    let prenom = document.getElementById("prenom");
     let telephone = document.getElementById("telephone");
+    let message = document.getElementById("message");
 
-    let inputs = document.getElementsByTagName("input");
 
-    // Pour tous les inputs
-    for (let i = 0; i < inputs.length; i++) {
-        // si un champs n'est pas renseigné
-        if (!inputs[i].value) {
-            error = "Veuillez renseigner tous les champs";
-            inputs[i].style.borderColor = "red";
-        }
-        else {
-        // si un champs est renseigné il passe au vert
-        inputs[i].style.borderColor = "green";
-        }
+    // Conditions **
+
+    // *****
+    // check if nom is entered
+    if (!nom.value) {
+        event.preventDefault();
+        document.getElementById("errorNom").innerHTML = "Veuillez renseigner votre nom<br>";
+        nom.style.borderColor = "red";
     }
-        if (error) {
-            // ne recharge pas la page si l'envoi n'est pas valide
-            event.preventDefault();
-            // Le message d'erreur s'affiche dans le p
-            document.getElementById("error").innerHTML = error;
-            return false;
-        }
-        else {
-            alert("Formulaire envoyé !");
-        }
-    
-});
-
-
-function checkTelephoneNumber() {
-    let numero = document.getElementById("telephone");
-
-    regTel = /^0[6-7]{1}[0-9]{8}/;
-
-    console.log('numéro : '+numero);
-
-    if (numero.match(regTel)) {
-        alert("ok");
+    else {
+        nom.style.borderColor = "green";
+    }
+    // *****
+    // check if prenom is entered
+    if (!prenom.value) {
+        event.preventDefault();
+        document.getElementById("errorPrenom").innerHTML = "Veuillez renseigner votre prénom";
+        prenom.style.borderColor = "red";
+    }
+    else {
+        prenom.style.borderColor = "green";
+    }
+    // *****
+    // check if telephone is entered and if it is valide
+    if (!telephone.value || !telephone.value.match(regTel)) {
+        event.preventDefault();
+        document.getElementById("errorTelephone").innerHTML = "Veuillez renseigner un numéro de téléphone valide";
+        telephone.style.borderColor = "red";
     } 
     else {
-        alert("ok");
-}
-
-}
+        telephone.style.borderColor = "green";
+    }
+    // *****
+    // check if message is entered and if it contains no forbidden word
+    if (!message.value) {
+        event.preventDefault();
+        document.getElementById("errorMessage").innerHTML = "Veuillez écrire votre message";
+    }
+    
+});

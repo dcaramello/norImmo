@@ -1,3 +1,5 @@
+## Projet Réalisé pendant ma formation Développeur Web et Web Mobile à l'Afpa de Saint Etienne du Rouvray
+
 # Projet à rendre : Un site d’agence immobilière pour NorImmo
 
 NorImmo est le leader de la construction et de la rénovation de maisons individuelles en Normandie. Pourquoi notre entreprise est-elle la première sur son marché? Car elle propose aussi bien des prestations de rénovation que de construction. En intervenant autant sur le neuf que sur l’ancien NorImmo a ainsi acquis une expertise globale qui lui a valu la confiance de ses clients. Avec un taux de satisfaction de 90% nos clients sont les plus satisfaits de Normandie. C’est pourquoi nous avons remporté le grand prix BestBuilder 2015, 2016 et 2019 qui récompense les meilleurs entrepreneurs.
